@@ -1,0 +1,40 @@
+name: clowder-projects
+
+projects:
+  - name: JrGoodle/clowder
+  - name: JrGoodle/clowder-examples
+
+  # Test clowder repos
+  - name: JrGoodle/cats
+    path: test/clowder-repos/cats
+  - name: JrGoodle/misc-clowder-tests
+    path: test/clowder-repos/misc-clowder-tests
+  - name: JrGoodle/swift-clowder
+    path: test/clowder-repos/swift-clowder
+
+  # Test repos
+  - name: JrGoodle/duke
+    path: test/cats/duke
+  - name: JrGoodle/june
+    path: test/cats/june
+  - name: JrGoodle/mu
+    path: test/cats/mu
+  - name: JrGoodle/sasha
+    path: test/cats/sasha
+  - name: JrGoodle/kit
+    path: test/cats/kit
+  - name: JrGoodle/kishka
+    path: test/cats/kishka
+
+  # Third party
+  - name: SchemaStore/schemastore
+    path: third-party/schemastore
+    remote: upstream
+    fork:
+      name: JrGoodle/schemastore
+      branch: clowder
+  - name: vscode-icons/vscode-icons
+    path: third-party/vscode-icons
+    remote: upstream
+    fork:
+      name: JrGoodle/vscode-icons

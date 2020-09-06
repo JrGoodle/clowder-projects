@@ -5,16 +5,18 @@ clowder:
     - JrGoodle/clowder
     - JrGoodle/clowder-examples
 
-  test:
-    path: test/clowder-repos
+  misc:
+    path: misc
     projects:
-      - JrGoodle/cats
       - JrGoodle/misc-clowder-tests
-      - JrGoodle/swift-clowder
+      - JrGoodle/djinni
+      - JrGoodle/gyp
+      - JrGoodle/sox
 
   cats:
-    path: test/cats
+    path: cats
     projects:
+      - JrGoodle/cats
       - JrGoodle/duke
       - JrGoodle/june
       - JrGoodle/mu
@@ -24,12 +26,14 @@ clowder:
       - JrGoodle/ash
       - JrGoodle/duffy
 
+  swift:
+    path: swift
+    projects:
+      - JrGoodle/swift-clowder
+
   third-party:
     path: third-party
     projects:
-      - JrGoodle/djinni
-      - JrGoodle/gyp
-      - JrGoodle/sox
       - name: JrGoodle/schemastore
         branch: clowder
         upstream: SchemaStore/schemastore

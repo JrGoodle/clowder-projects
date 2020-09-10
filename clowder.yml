@@ -1,5 +1,11 @@
 name: clowder-projects
 
+sources:
+  launchpad:
+    url: launchpad.net
+  beanstalk:
+    url: polka-dot-cat.git.beanstalkapp.com
+
 clowder:
   main:
     - JrGoodle/clowder
@@ -25,6 +31,14 @@ clowder:
       - JrGoodle/kishka
       - JrGoodle/ash
       - JrGoodle/duffy
+      - name: JrGoodle/felis-catus
+        source: gitlab
+      - name: jdecapo/tommy
+        source: bitbucket
+      - name: polka-dot-cat/felidae
+        source: beanstalk
+      # - name: felidae
+      #   source: launchpad
 
   swift:
     path: swift

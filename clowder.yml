@@ -2,7 +2,7 @@ name: clowder-projects
 
 sources:
   launchpad:
-    url: launchpad.net
+    url: git.launchpad.net
   beanstalk:
     url: polka-dot-cat.git.beanstalkapp.com
 
@@ -37,8 +37,9 @@ clowder:
         source: bitbucket
       - name: polka-dot-cat/felidae
         source: beanstalk
-      # - name: felidae
-      #   source: launchpad
+        # upstream:
+        #   name: felidae
+        #   source: launchpad
 
   swift:
     path: swift
@@ -53,3 +54,14 @@ clowder:
         upstream: SchemaStore/schemastore
       - name: JrGoodle/vscode-icons
         upstream: vscode-icons/vscode-icons
+
+  old:
+    path: old
+    projects:
+      - JrGoodle/llvm-projects
+
+  subrepo:
+    path: subrepo
+    projects:
+      - ingydotnet/git-subrepo
+      - JrGoodle/duffy

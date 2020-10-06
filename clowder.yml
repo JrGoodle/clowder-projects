@@ -65,3 +65,11 @@ clowder:
     projects:
       - ingydotnet/git-subrepo
       - JrGoodle/duffy
+
+  google:
+    - name: JrGoodle/repo
+      upstream:
+        name: git-repo
+        source:
+          url: gerrit.googlesource.com
+          protocol: https
